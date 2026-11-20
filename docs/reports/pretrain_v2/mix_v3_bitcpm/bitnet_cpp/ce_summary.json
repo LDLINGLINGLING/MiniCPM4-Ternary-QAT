@@ -1,0 +1,94 @@
+{
+  "protocol": {
+    "sequence_length": 2048,
+    "windows_per_domain": 256,
+    "token_predictions_per_domain": 524288,
+    "decode_steps": 0,
+    "selection": "fixed leading nonoverlapping uint32 windows of 2049 tokens",
+    "note": "elapsed times were measured with eight concurrent evaluators and are not isolated performance results"
+  },
+  "models": {
+    "row": {
+      "domains": {
+        "web_zh": {
+          "llama_ce": 2.95674323924,
+          "native_hf_ce": 2.9545050114393234,
+          "delta": 0.0022382278006767287,
+          "llama_top1": 0.460933685303,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4315.27290314
+        },
+        "web_en": {
+          "llama_ce": 2.86096277209,
+          "native_hf_ce": 2.8587531223893166,
+          "delta": 0.0022096497006836024,
+          "llama_top1": 0.440301895142,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4315.45407393
+        },
+        "math": {
+          "llama_ce": 1.24519204388,
+          "native_hf_ce": 1.243506696075201,
+          "delta": 0.001685347804798898,
+          "llama_top1": 0.713264465332,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4345.30278394
+        },
+        "code": {
+          "llama_ce": 0.533312543308,
+          "native_hf_ce": 0.5322408098727465,
+          "delta": 0.0010717334352535746,
+          "llama_top1": 0.860778808594,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4345.89825285
+        }
+      },
+      "macro_ce": {
+        "llama": 1.8990526496295002,
+        "native_hf": 1.8972514099441469,
+        "delta": 0.0018012396853532842
+      }
+    },
+    "g32": {
+      "domains": {
+        "web_zh": {
+          "llama_ce": 2.93910690379,
+          "native_hf_ce": 2.937009360641241,
+          "delta": 0.0020975431487588736,
+          "llama_top1": 0.462677001953,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4693.98992636
+        },
+        "web_en": {
+          "llama_ce": 2.84763973671,
+          "native_hf_ce": 2.845672145485878,
+          "delta": 0.001967591224122156,
+          "llama_top1": 0.44181060791,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4665.26898477
+        },
+        "math": {
+          "llama_ce": 1.2342885501,
+          "native_hf_ce": 1.2327888384461403,
+          "delta": 0.0014997116538597588,
+          "llama_top1": 0.714925765991,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4667.44222394
+        },
+        "code": {
+          "llama_ce": 0.524751970346,
+          "native_hf_ce": 0.5236969171091914,
+          "delta": 0.0010550532368085452,
+          "llama_top1": 0.862672805786,
+          "token_predictions": 524288,
+          "elapsed_seconds_under_contention": 4690.17315166
+        }
+      },
+      "macro_ce": {
+        "llama": 1.8864467902365,
+        "native_hf": 1.8847918154206127,
+        "delta": 0.001654974815887389
+      }
+    }
+  }
+}

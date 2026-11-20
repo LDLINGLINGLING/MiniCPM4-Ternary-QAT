@@ -1,0 +1,15 @@
+{
+  "model": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v2_qat_70_15_15-I2_S_ROW.gguf",
+  "tokens": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/data/mix_v2/web_zh_val.bin",
+  "sequence_length": 2048,
+  "windows": 1,
+  "decode_steps": 0,
+  "token_predictions": 2048,
+  "cross_entropy": 3.57372293414,
+  "top1_accuracy": 0.4033203125,
+  "elapsed_seconds": 46.756421624,
+  "prefill_seconds": 46.68929575,
+  "decode_seconds": 0,
+  "threads": 16,
+  "threads_batch": 16
+}

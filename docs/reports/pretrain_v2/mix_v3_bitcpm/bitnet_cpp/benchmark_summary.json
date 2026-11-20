@@ -1,0 +1,264 @@
+{
+  "protocol": {
+    "backend": "CPU",
+    "n_gpu_layers": 0,
+    "prompt_tokens": 512,
+    "generation_tokens": 128,
+    "threads": [
+      16,
+      64
+    ],
+    "repetitions": 3,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "models_run_sequentially": true
+  },
+  "models": {
+    "row": {
+      "benchmark": [
+        {
+          "threads": 16,
+          "n_prompt": 512,
+          "n_gen": 0,
+          "avg_tokens_per_second": 169.31647,
+          "stddev_tokens_per_second": 25.492324,
+          "samples_tokens_per_second": [
+            144.191,
+            168.598,
+            195.16
+          ],
+          "avg_ns": 3070379622,
+          "stddev_ns": 464593942
+        },
+        {
+          "threads": 16,
+          "n_prompt": 0,
+          "n_gen": 128,
+          "avg_tokens_per_second": 101.229992,
+          "stddev_tokens_per_second": 9.266814,
+          "samples_tokens_per_second": [
+            110.571,
+            101.079,
+            92.0397
+          ],
+          "avg_ns": 1271555074,
+          "stddev_ns": 116628517
+        },
+        {
+          "threads": 64,
+          "n_prompt": 512,
+          "n_gen": 0,
+          "avg_tokens_per_second": 525.705269,
+          "stddev_tokens_per_second": 43.981302,
+          "samples_tokens_per_second": [
+            475.377,
+            544.981,
+            556.757
+          ],
+          "avg_ns": 978710660,
+          "stddev_ns": 85732914
+        },
+        {
+          "threads": 64,
+          "n_prompt": 0,
+          "n_gen": 128,
+          "avg_tokens_per_second": 133.395342,
+          "stddev_tokens_per_second": 5.853889,
+          "samples_tokens_per_second": [
+            131.999,
+            139.821,
+            128.366
+          ],
+          "avg_ns": 960769752,
+          "stddev_ns": 41573660
+        }
+      ],
+      "benchmark_wall_seconds": 29.039906412363052,
+      "benchmark_peak_rss_kib": 751992,
+      "real_generation": {
+        "scalar": {
+          "prompt_tokens_per_second": 31.3,
+          "generation_tokens_per_second": 24.7,
+          "wall_seconds": 7.805175483226776,
+          "peak_rss_kib": 717124,
+          "returncode": 0,
+          "command": [
+            "/chubao/tj-train-ssd-21/liudan190/bitnet.cpp/build/bin/llama-cli",
+            "-m",
+            "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v2_qat_70_15_15-I2_S_ROW.gguf",
+            "-p",
+            "The capital of France is",
+            "-n",
+            "24",
+            "-t",
+            "16",
+            "-tb",
+            "16",
+            "-c",
+            "512",
+            "--temp",
+            "0",
+            "--top-k",
+            "1",
+            "--no-warmup",
+            "--no-display-prompt",
+            "--single-turn"
+          ]
+        },
+        "simd": {
+          "prompt_tokens_per_second": 123.2,
+          "generation_tokens_per_second": 62.7,
+          "wall_seconds": 6.566515505313873,
+          "peak_rss_kib": 716224,
+          "returncode": 0,
+          "command": [
+            "/chubao/tj-train-ssd-21/liudan190/bitnet.cpp/build/bin/llama-cli",
+            "-m",
+            "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v2_qat_70_15_15-I2_S_ROW.gguf",
+            "-p",
+            "The capital of France is",
+            "-n",
+            "24",
+            "-t",
+            "16",
+            "-tb",
+            "16",
+            "-c",
+            "512",
+            "--temp",
+            "0",
+            "--top-k",
+            "1",
+            "--no-warmup",
+            "--no-display-prompt",
+            "--single-turn"
+          ]
+        }
+      },
+      "real_generation_simd_speedup": 2.5384615384615388
+    },
+    "g32": {
+      "benchmark": [
+        {
+          "threads": 16,
+          "n_prompt": 512,
+          "n_gen": 0,
+          "avg_tokens_per_second": 190.826164,
+          "stddev_tokens_per_second": 33.68301,
+          "samples_tokens_per_second": [
+            152.161,
+            206.513,
+            213.804
+          ],
+          "avg_ns": 2746277441,
+          "stddev_ns": 537373749
+        },
+        {
+          "threads": 16,
+          "n_prompt": 0,
+          "n_gen": 128,
+          "avg_tokens_per_second": 91.686331,
+          "stddev_tokens_per_second": 2.863163,
+          "samples_tokens_per_second": [
+            89.4559,
+            94.915,
+            90.6881
+          ],
+          "avg_ns": 1396959605,
+          "stddev_ns": 43014788
+        },
+        {
+          "threads": 64,
+          "n_prompt": 512,
+          "n_gen": 0,
+          "avg_tokens_per_second": 483.244096,
+          "stddev_tokens_per_second": 16.051189,
+          "samples_tokens_per_second": [
+            466.515,
+            484.7,
+            498.518
+          ],
+          "avg_ns": 1060289599,
+          "stddev_ns": 35394966
+        },
+        {
+          "threads": 64,
+          "n_prompt": 0,
+          "n_gen": 128,
+          "avg_tokens_per_second": 128.684778,
+          "stddev_tokens_per_second": 2.03565,
+          "samples_tokens_per_second": [
+            126.34,
+            129.998,
+            129.716
+          ],
+          "avg_ns": 994846100,
+          "stddev_ns": 15879379
+        }
+      ],
+      "benchmark_wall_seconds": 25.77757042646408,
+      "benchmark_peak_rss_kib": 794640,
+      "real_generation": {
+        "scalar": {
+          "prompt_tokens_per_second": 27.7,
+          "generation_tokens_per_second": 23.5,
+          "wall_seconds": 8.150666162371635,
+          "peak_rss_kib": 759680,
+          "returncode": 0,
+          "command": [
+            "/chubao/tj-train-ssd-21/liudan190/bitnet.cpp/build/bin/llama-cli",
+            "-m",
+            "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v3_bitcpm_pg32-I2_S_G32.gguf",
+            "-p",
+            "The capital of France is",
+            "-n",
+            "24",
+            "-t",
+            "16",
+            "-tb",
+            "16",
+            "-c",
+            "512",
+            "--temp",
+            "0",
+            "--top-k",
+            "1",
+            "--no-warmup",
+            "--no-display-prompt",
+            "--single-turn"
+          ]
+        },
+        "simd": {
+          "prompt_tokens_per_second": 108.3,
+          "generation_tokens_per_second": 51.8,
+          "wall_seconds": 6.602391131222248,
+          "peak_rss_kib": 759096,
+          "returncode": 0,
+          "command": [
+            "/chubao/tj-train-ssd-21/liudan190/bitnet.cpp/build/bin/llama-cli",
+            "-m",
+            "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v3_bitcpm_pg32-I2_S_G32.gguf",
+            "-p",
+            "The capital of France is",
+            "-n",
+            "24",
+            "-t",
+            "16",
+            "-tb",
+            "16",
+            "-c",
+            "512",
+            "--temp",
+            "0",
+            "--top-k",
+            "1",
+            "--no-warmup",
+            "--no-display-prompt",
+            "--single-turn"
+          ]
+        }
+      },
+      "real_generation_simd_speedup": 2.204255319148936
+    }
+  }
+}

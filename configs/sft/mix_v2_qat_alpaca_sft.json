@@ -1,0 +1,44 @@
+{
+  "data_dir": "./data/alpaca_sft_v1",
+  "run_dir": "./runs/mix_v2_qat_alpaca_sft",
+  "model": "./MiniCPM4-0.5B-fjzcuwlf",
+  "init_ckpt": "./runs/mix_v2_qat_sft/snapshots/epoch_4/model.pt",
+  "init_mode": "qat",
+  "resume": null,
+  "lr": 5e-05,
+  "epochs": 3,
+  "global_batch": 128,
+  "micro_batch": 2,
+  "max_length": 2048,
+  "warmup_frac": 0.05,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "seed": 1234,
+  "save_every_steps": 200,
+  "log_every_steps": 10,
+  "no_gradient_checkpointing": true,
+  "tensorboard": true,
+  "data_hash": "8101cceda93a5780cd1578a26b62acecfcbcef16f0a781b13fa1517269facf13",
+  "manifest": {
+    "version": 1,
+    "seed": 20261110,
+    "dev_size": 1000,
+    "train_size": 495219,
+    "sources": {
+      "alpaca_en": 51589,
+      "firefly": 384973,
+      "alpaca_zh": 48669,
+      "hc3": 9988
+    },
+    "max_chars": 8000,
+    "decontam_removed": 9728,
+    "files": {
+      "train": "./data/alpaca_sft_v1/train.jsonl",
+      "dev": "./data/alpaca_sft_v1/dev.jsonl"
+    }
+  },
+  "train_examples": 494758,
+  "dev_examples": 998,
+  "updates_per_epoch": 3866,
+  "total_steps": 11598
+}

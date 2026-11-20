@@ -1,0 +1,4 @@
+# Install the project and offline-test dependencies from the repository root.
+# The vendored llama.cpp converter requirements are intentionally not included:
+# some of them pin a different torch version from the training environment.
+-e .[dev]

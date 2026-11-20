@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minicpm4-ternary-qat"
+version = "0.1.0"
+description = "MiniCPM4-0.5B ternary QAT, data pipelines, and native x86 ROW/G32 inference"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.2",
+    "transformers>=4.45",
+    "tokenizers>=0.20",
+    "safetensors>=0.4",
+    "pyarrow>=14",
+    "requests>=2.31",
+    "huggingface-hub>=0.24",
+    "tensorboard>=2.14",
+    "pyahocorasick>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["qat*", "tools*", "data_pipeline*"]
+exclude = ["bitnet*", "docs*", "tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"

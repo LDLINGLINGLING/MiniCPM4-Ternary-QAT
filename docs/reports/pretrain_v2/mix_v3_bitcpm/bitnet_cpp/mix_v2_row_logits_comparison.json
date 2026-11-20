@@ -1,0 +1,43 @@
+{
+  "hf_dir": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/exports/mix_v2_qat_70_15_15_fp32_master",
+  "native_logits": "/tmp/mix_v2_row_logits.bin",
+  "granularity": "row",
+  "device": "cuda:0",
+  "autocast": "bf16",
+  "sequence_length": 32,
+  "decode_steps": 8,
+  "vocab_size": 73448,
+  "overall": {
+    "positions": 40,
+    "max_abs_error": 1.2950186729431152,
+    "mean_abs_error": 0.10182276368141174,
+    "rmse": 0.1352197579298052,
+    "argmax_agreement": 0.95,
+    "native_cross_entropy": 4.573948860168457,
+    "hf_cross_entropy": 4.566380500793457,
+    "native_target_accuracy": 0.3,
+    "hf_target_accuracy": 0.3
+  },
+  "prefill": {
+    "positions": 32,
+    "max_abs_error": 1.2950186729431152,
+    "mean_abs_error": 0.10477276146411896,
+    "rmse": 0.1400657556844297,
+    "argmax_agreement": 0.9375,
+    "native_cross_entropy": 5.1602959632873535,
+    "hf_cross_entropy": 5.156929016113281,
+    "native_target_accuracy": 0.25,
+    "hf_target_accuracy": 0.25
+  },
+  "cached_decode": {
+    "positions": 8,
+    "max_abs_error": 0.6721711158752441,
+    "mean_abs_error": 0.09002286940813065,
+    "rmse": 0.11379038189220647,
+    "argmax_agreement": 1.0,
+    "native_cross_entropy": 2.2285609245300293,
+    "hf_cross_entropy": 2.2041847705841064,
+    "native_target_accuracy": 0.5,
+    "hf_target_accuracy": 0.5
+  }
+}

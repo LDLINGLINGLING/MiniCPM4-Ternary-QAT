@@ -1,0 +1,6 @@
+dd13f8094f21dac1139f828cb4466eae21bb7ac6dcffdf8e4e8c291ed8cb9589  /tmp/mix_v2_row_logits.bin
+dd13f8094f21dac1139f828cb4466eae21bb7ac6dcffdf8e4e8c291ed8cb9589  /tmp/mix_v2_row_logits_simd.bin
+f36b3805890a3d05649889f9e20f01694065ac2f81606c720537fefad84fdd7a  /tmp/mix_v3_g32_logits.bin
+f36b3805890a3d05649889f9e20f01694065ac2f81606c720537fefad84fdd7a  /tmp/mix_v3_g32_logits_simd.bin
+ROW pre/post-SIMD logits: bitwise identical
+G32 pre/post-SIMD logits: bitwise identical

@@ -1,0 +1,246 @@
+{
+  "gguf": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v2_qat_70_15_15-I2_S_ROW.gguf",
+  "granularity": "row",
+  "file_bytes": 694336128,
+  "tensor_count": 221,
+  "quantized_tensors": 168,
+  "exact_f32_tensors": 53,
+  "ternary_code_mismatches": 205,
+  "half_threshold_code_differences": 205,
+  "nonboundary_code_mismatches": 0,
+  "max_half_threshold_normalized_error": 9.5367431640625e-07,
+  "max_scale_abs_error": 2.0116567611694336e-07,
+  "max_scale_relative_error": 4.627105681720423e-06,
+  "max_weight_abs_error": 0.07137526571750641,
+  "max_matching_code_weight_abs_error": 2.0116567611694336e-07,
+  "code_mismatch_examples": [
+    {
+      "tensor": "blk.0.attn_k.weight",
+      "row": 26,
+      "column": 781,
+      "master": 0.01798798143863678,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.03597596660256386,
+      "reference_scale": 0.035975951701402664
+    },
+    {
+      "tensor": "blk.0.attn_output.weight",
+      "row": 126,
+      "column": 448,
+      "master": 0.014287478290498257,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.02857496403157711,
+      "reference_scale": 0.028574952855706215
+    },
+    {
+      "tensor": "blk.0.ffn_down.weight",
+      "row": 140,
+      "column": 1677,
+      "master": -0.018063224852085114,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.03612646460533142,
+      "reference_scale": 0.03612641990184784
+    },
+    {
+      "tensor": "blk.0.ffn_down.weight",
+      "row": 178,
+      "column": 3115,
+      "master": -0.0178840234875679,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.0357680469751358,
+      "reference_scale": 0.03576800599694252
+    },
+    {
+      "tensor": "blk.0.ffn_down.weight",
+      "row": 407,
+      "column": 3391,
+      "master": -0.03252970427274704,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.06505949050188065,
+      "reference_scale": 0.06505939364433289
+    },
+    {
+      "tensor": "blk.0.ffn_down.weight",
+      "row": 961,
+      "column": 1707,
+      "master": 0.01927451603114605,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.03854904696345329,
+      "reference_scale": 0.0385490283370018
+    },
+    {
+      "tensor": "blk.0.ffn_gate.weight",
+      "row": 2794,
+      "column": 658,
+      "master": 0.017115090042352676,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.034230176359415054,
+      "reference_scale": 0.03423018753528595
+    },
+    {
+      "tensor": "blk.0.ffn_gate.weight",
+      "row": 3642,
+      "column": 722,
+      "master": -0.01976913958787918,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.03953827545046806,
+      "reference_scale": 0.03953830152750015
+    },
+    {
+      "tensor": "blk.1.attn_output.weight",
+      "row": 747,
+      "column": 11,
+      "master": -0.0229051373898983,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.045810259878635406,
+      "reference_scale": 0.04581029713153839
+    },
+    {
+      "tensor": "blk.1.attn_v.weight",
+      "row": 85,
+      "column": 860,
+      "master": 0.02653399482369423,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.053067974746227264,
+      "reference_scale": 0.05306799337267876
+    },
+    {
+      "tensor": "blk.1.attn_v.weight",
+      "row": 124,
+      "column": 259,
+      "master": 0.025338534265756607,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.05067705735564232,
+      "reference_scale": 0.050677090883255005
+    },
+    {
+      "tensor": "blk.1.attn_v.weight",
+      "row": 124,
+      "column": 1020,
+      "master": -0.025338537991046906,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.05067705735564232,
+      "reference_scale": 0.050677090883255005
+    },
+    {
+      "tensor": "blk.1.ffn_down.weight",
+      "row": 5,
+      "column": 1521,
+      "master": 0.02286500670015812,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.04573001712560654,
+      "reference_scale": 0.045729998499155045
+    },
+    {
+      "tensor": "blk.1.ffn_down.weight",
+      "row": 253,
+      "column": 416,
+      "master": 0.022384725511074066,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.04476948082447052,
+      "reference_scale": 0.044769447296857834
+    },
+    {
+      "tensor": "blk.1.ffn_down.weight",
+      "row": 342,
+      "column": 3773,
+      "master": -0.018768800422549248,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.037537582218647,
+      "reference_scale": 0.03753763437271118
+    },
+    {
+      "tensor": "blk.1.ffn_down.weight",
+      "row": 381,
+      "column": 2224,
+      "master": -0.0174387339502573,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.03487744927406311,
+      "reference_scale": 0.0348774753510952
+    },
+    {
+      "tensor": "blk.1.ffn_gate.weight",
+      "row": 586,
+      "column": 96,
+      "master": -0.02307981438934803,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.046159613877534866,
+      "reference_scale": 0.04615963250398636
+    },
+    {
+      "tensor": "blk.1.ffn_gate.weight",
+      "row": 1101,
+      "column": 188,
+      "master": 0.02090984582901001,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.041819702833890915,
+      "reference_scale": 0.04181966930627823
+    },
+    {
+      "tensor": "blk.1.ffn_gate.weight",
+      "row": 2849,
+      "column": 585,
+      "master": -0.017523979768157005,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.0350479818880558,
+      "reference_scale": 0.03504795581102371
+    },
+    {
+      "tensor": "blk.1.ffn_gate.weight",
+      "row": 2975,
+      "column": 590,
+      "master": 0.018969805911183357,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.03793962672352791,
+      "reference_scale": 0.03793960437178612
+    }
+  ],
+  "largest_scale_errors": [
+    {
+      "tensor": "blk.23.ffn_down.weight",
+      "scale_abs_error": 2.0116567611694336e-07,
+      "code_mismatches": 5
+    },
+    {
+      "tensor": "blk.16.ffn_down.weight",
+      "scale_abs_error": 1.8998980522155762e-07,
+      "code_mismatches": 7
+    },
+    {
+      "tensor": "blk.5.ffn_down.weight",
+      "scale_abs_error": 1.862645149230957e-07,
+      "code_mismatches": 0
+    },
+    {
+      "tensor": "blk.2.ffn_down.weight",
+      "scale_abs_error": 1.7881393432617188e-07,
+      "code_mismatches": 3
+    },
+    {
+      "tensor": "blk.15.ffn_down.weight",
+      "scale_abs_error": 1.7136335372924805e-07,
+      "code_mismatches": 1
+    }
+  ],
+  "status": "passed"
+}

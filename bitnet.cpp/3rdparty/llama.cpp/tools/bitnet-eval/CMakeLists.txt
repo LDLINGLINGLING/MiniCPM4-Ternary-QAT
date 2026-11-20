@@ -1,0 +1,5 @@
+find_package(OpenMP REQUIRED)
+set(TARGET llama-bitnet-eval)
+add_executable(${TARGET} bitnet-eval.cpp)
+target_link_libraries(${TARGET} PRIVATE llama ggml OpenMP::OpenMP_CXX)
+target_compile_features(${TARGET} PRIVATE cxx_std_17)

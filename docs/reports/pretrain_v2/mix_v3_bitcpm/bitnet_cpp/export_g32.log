@@ -1,0 +1,14 @@
+{
+  "export_kind": "fp32_master_conversion_intermediate",
+  "description": "Unchanged FP32 master weights; no ternarization applied during HF export.",
+  "conversion_pipeline": "FP32 master -> F32 GGUF -> native absmean I2_S_ROW/G32",
+  "quantization_applied": false,
+  "granularity": "g32",
+  "quant_group": 32,
+  "tensor_count": 219,
+  "projection_tensor_count": 168,
+  "num_hidden_layers": 24,
+  "source_checkpoint": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/runs/mix_v3_bitcpm_pg32/checkpoints/final/state.pt",
+  "run_config": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/runs/mix_v3_bitcpm_pg32/resolved_config.json",
+  "base_model": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/MiniCPM4-0.5B-fjzcuwlf"
+}

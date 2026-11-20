@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Downloaded models, raw/prepared datasets, benchmarks, and training outputs
+/data/
+/eval_data/
+/runs/
+/reports/
+/exports/
+/gguf/
+/models/
+/MiniCPM4-0.5B*/
+
+# Large generated model/deployment artifacts
+*.gguf
+# Upstream llama.cpp tokenizer regression fixtures are source inputs, not trained models.
+!bitnet.cpp/3rdparty/llama.cpp/models/*.gguf
+*.safetensors
+*.pt
+*.pth
+*.partial
+
+# Runtime logs are ignored; textual evidence under docs/reports is kept.
+*.log
+!docs/reports/**/*.log
+.DS_Store
+.vscode/
+.idea/

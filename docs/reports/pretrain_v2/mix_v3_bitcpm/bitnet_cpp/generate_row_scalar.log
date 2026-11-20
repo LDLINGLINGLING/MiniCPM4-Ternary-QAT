@@ -1,0 +1,34 @@
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9918-390c30775
+model      : /chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v2_qat_70_15_15-I2_S_ROW.gguf
+ftype      : I2_S_ROW
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> The capital of France is
+
+|-\|/ The capital of France is Brunswick, which is located in the province of Brunswick. Brunswick is a small town in the province
+
+[ Prompt: 31.3 t/s | Generation: 24.7 t/s ]
+
+Exiting...
+
+WRAPPER_STATS {"returncode": 0, "wall_seconds": 7.805175483226776, "max_rss_kib": 717124, "command": ["/chubao/tj-train-ssd-21/liudan190/bitnet.cpp/build/bin/llama-cli", "-m", "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v2_qat_70_15_15-I2_S_ROW.gguf", "-p", "The capital of France is", "-n", "24", "-t", "16", "-tb", "16", "-c", "512", "--temp", "0", "--top-k", "1", "--no-warmup", "--no-display-prompt", "--single-turn"]}

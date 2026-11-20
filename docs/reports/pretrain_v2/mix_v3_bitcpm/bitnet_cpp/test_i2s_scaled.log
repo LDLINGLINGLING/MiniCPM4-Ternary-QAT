@@ -1,0 +1,29 @@
+ok: legacy I2_S regression
+ok: GGML CPU mul_mat i2_s K=128 rows=5 cols=4 threads=3
+ok: GGML CPU mul_mat i2_s_row K=128 rows=5 cols=5 threads=3
+ok: i2_s_row K=32 rows=1 cols=5
+ok: i2_s_row K=32 rows=3 cols=5
+ok: i2_s_row K=32 rows=5 cols=5
+ok: i2_s_row K=64 rows=1 cols=5
+ok: i2_s_row K=64 rows=3 cols=5
+ok: i2_s_row K=64 rows=5 cols=5
+ok: i2_s_row K=128 rows=1 cols=5
+ok: i2_s_row K=128 rows=3 cols=5
+ok: i2_s_row K=128 rows=5 cols=5
+ok: i2_s_row K=256 rows=1 cols=5
+ok: i2_s_row K=256 rows=3 cols=5
+ok: i2_s_row K=256 rows=5 cols=5
+ok: GGML CPU mul_mat i2_s_g32 K=128 rows=5 cols=5 threads=3
+ok: i2_s_g32 K=32 rows=1 cols=5
+ok: i2_s_g32 K=32 rows=3 cols=5
+ok: i2_s_g32 K=32 rows=5 cols=5
+ok: i2_s_g32 K=64 rows=1 cols=5
+ok: i2_s_g32 K=64 rows=3 cols=5
+ok: i2_s_g32 K=64 rows=5 cols=5
+ok: i2_s_g32 K=128 rows=1 cols=5
+ok: i2_s_g32 K=128 rows=3 cols=5
+ok: i2_s_g32 K=128 rows=5 cols=5
+ok: i2_s_g32 K=256 rows=1 cols=5
+ok: i2_s_g32 K=256 rows=3 cols=5
+ok: i2_s_g32 K=256 rows=5 cols=5
+all scaled I2_S known-answer tests passed

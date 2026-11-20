@@ -1,0 +1,43 @@
+{
+  "data_dir": "./data/alpaca_gsm8k_sft_v1",
+  "run_dir": "./runs/mix_v2_qat_alpaca_gsm8k_sft",
+  "model": "./MiniCPM4-0.5B-fjzcuwlf",
+  "init_ckpt": "./runs/mix_v2_qat_sft/snapshots/epoch_4/model.pt",
+  "init_mode": "qat",
+  "resume": null,
+  "lr": 5e-05,
+  "epochs": 3,
+  "global_batch": 128,
+  "micro_batch": 2,
+  "max_length": 2048,
+  "warmup_frac": 0.05,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "seed": 1234,
+  "save_every_steps": 200,
+  "log_every_steps": 10,
+  "no_gradient_checkpointing": true,
+  "tensorboard": true,
+  "data_hash": "a6b70091b4ad76a1446efdb4c8d00c0e03f9ccef39e9ea0ae4b02a255cfab9b3",
+  "manifest": {
+    "version": 1,
+    "seed": 20261110,
+    "repeat": 3,
+    "train_size": 516138,
+    "dev_size": 1500,
+    "sources": {
+      "alpaca_sft_v1": 495219,
+      "gsm8k_train": 6973,
+      "gsm8k_repeated": 20919
+    },
+    "gsm8k_share": 0.04052985829371215,
+    "files": {
+      "train": "./data/alpaca_gsm8k_sft_v1/train.jsonl",
+      "dev": "./data/alpaca_gsm8k_sft_v1/dev.jsonl"
+    }
+  },
+  "train_examples": 515677,
+  "dev_examples": 1498,
+  "updates_per_epoch": 4029,
+  "total_steps": 12087
+}

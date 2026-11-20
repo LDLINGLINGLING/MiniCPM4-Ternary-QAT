@@ -1,0 +1,22 @@
+{
+  "returncode": 0,
+  "wall_seconds": 25.77757042646408,
+  "max_rss_kib": 794640,
+  "command": [
+    "/chubao/tj-train-ssd-21/liudan190/bitnet.cpp/build/bin/llama-bench",
+    "-m",
+    "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v3_bitcpm_pg32-I2_S_G32.gguf",
+    "-p",
+    "512",
+    "-n",
+    "128",
+    "-t",
+    "16,64",
+    "-r",
+    "3",
+    "-ngl",
+    "0",
+    "-o",
+    "json"
+  ]
+}

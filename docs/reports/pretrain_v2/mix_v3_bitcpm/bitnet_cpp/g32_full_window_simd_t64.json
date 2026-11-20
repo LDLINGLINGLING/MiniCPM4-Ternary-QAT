@@ -1,0 +1,15 @@
+{
+  "model": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v3_bitcpm_pg32-I2_S_G32.gguf",
+  "tokens": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/data/mix_v2/web_zh_val.bin",
+  "sequence_length": 2048,
+  "windows": 1,
+  "decode_steps": 0,
+  "token_predictions": 2048,
+  "cross_entropy": 3.54019458146,
+  "top1_accuracy": 0.39990234375,
+  "elapsed_seconds": 6.734450065,
+  "prefill_seconds": 6.709104383,
+  "decode_seconds": 0,
+  "threads": 64,
+  "threads_batch": 64
+}

@@ -1,0 +1,40 @@
+{
+  "model": "MiniCPM4-0.5B-fjzcuwlf",
+  "data": "data/ufw_v1",
+  "langs": [
+    "zh",
+    "en"
+  ],
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "mode": "qat",
+  "seq_len": 2048,
+  "micro_batch": 4,
+  "global_batch_tokens": 1048576,
+  "total_tokens": 943718400,
+  "lr": 0.003,
+  "mup_lr_scale": true,
+  "min_lr_ratio": 0.1,
+  "warmup_frac": 0.02,
+  "decay_frac": 0.2,
+  "weight_decay": 0.1,
+  "beta1": 0.9,
+  "beta2": 0.95,
+  "grad_clip": 1.0,
+  "alpha_ramp_frac": 0.1,
+  "alpha_ramp_tokens": 0,
+  "kd_weight": 0.9,
+  "kd_temp": 1.0,
+  "teacher_ckpt": "runs/s3_A_bf16_lr1e-3/checkpoints/final/state.pt",
+  "eval_every_tokens": 50331648,
+  "val_windows": 256,
+  "val_data": "data/ufw_v1",
+  "seed": 1234,
+  "tensorboard": true,
+  "save_every_tokens": 209715200,
+  "snapshot_tokens": [],
+  "run_dir": "./runs/s3_E_qat_ramp_lr3e-3_kdA2_0.9",
+  "eval_only": false
+}

@@ -1,0 +1,246 @@
+{
+  "gguf": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/gguf/mix_v3_bitcpm_pg32-I2_S_G32.gguf",
+  "granularity": "g32",
+  "file_bytes": 738056832,
+  "tensor_count": 221,
+  "quantized_tensors": 168,
+  "exact_f32_tensors": 53,
+  "ternary_code_mismatches": 29,
+  "half_threshold_code_differences": 29,
+  "nonboundary_code_mismatches": 0,
+  "max_half_threshold_normalized_error": 8.940696716308594e-08,
+  "max_scale_abs_error": 8.940696716308594e-08,
+  "max_scale_relative_error": 5.31936393599608e-07,
+  "max_weight_abs_error": 0.06680577993392944,
+  "max_matching_code_weight_abs_error": 8.940696716308594e-08,
+  "code_mismatch_examples": [
+    {
+      "tensor": "blk.0.ffn_up.weight",
+      "row": 597,
+      "column": 813,
+      "master": 0.017353007569909096,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.03470601141452789,
+      "reference_scale": 0.03470601513981819
+    },
+    {
+      "tensor": "blk.1.ffn_up.weight",
+      "row": 2135,
+      "column": 179,
+      "master": -0.0289536751806736,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.0579073466360569,
+      "reference_scale": 0.0579073503613472
+    },
+    {
+      "tensor": "blk.2.ffn_gate.weight",
+      "row": 1993,
+      "column": 675,
+      "master": 0.018757404759526253,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.03751480579376221,
+      "reference_scale": 0.037514809519052505
+    },
+    {
+      "tensor": "blk.2.ffn_up.weight",
+      "row": 2636,
+      "column": 527,
+      "master": 0.027903424575924873,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.05580684915184975,
+      "reference_scale": 0.05580684542655945
+    },
+    {
+      "tensor": "blk.5.ffn_down.weight",
+      "row": 746,
+      "column": 3936,
+      "master": 0.01827569305896759,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.03655138611793518,
+      "reference_scale": 0.03655138239264488
+    },
+    {
+      "tensor": "blk.5.ffn_gate.weight",
+      "row": 3836,
+      "column": 827,
+      "master": 0.017735736444592476,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.03547146916389465,
+      "reference_scale": 0.03547147288918495
+    },
+    {
+      "tensor": "blk.6.ffn_down.weight",
+      "row": 944,
+      "column": 1016,
+      "master": 0.01890217512845993,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.03780435398221016,
+      "reference_scale": 0.03780434653162956
+    },
+    {
+      "tensor": "blk.7.ffn_down.weight",
+      "row": 883,
+      "column": 2893,
+      "master": -0.022102877497673035,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.04420575499534607,
+      "reference_scale": 0.04420574754476547
+    },
+    {
+      "tensor": "blk.8.ffn_up.weight",
+      "row": 1750,
+      "column": 797,
+      "master": 0.02755599096417427,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.05511197820305824,
+      "reference_scale": 0.05511198192834854
+    },
+    {
+      "tensor": "blk.9.attn_q.weight",
+      "row": 273,
+      "column": 255,
+      "master": -0.01967599242925644,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.03935197740793228,
+      "reference_scale": 0.03935198485851288
+    },
+    {
+      "tensor": "blk.9.ffn_up.weight",
+      "row": 2545,
+      "column": 296,
+      "master": -0.016206547617912292,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.032413095235824585,
+      "reference_scale": 0.032413091510534286
+    },
+    {
+      "tensor": "blk.10.attn_output.weight",
+      "row": 330,
+      "column": 318,
+      "master": -0.009135806001722813,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.018271608278155327,
+      "reference_scale": 0.018271612003445625
+    },
+    {
+      "tensor": "blk.12.ffn_down.weight",
+      "row": 112,
+      "column": 2802,
+      "master": 0.025136791169643402,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.050273578613996506,
+      "reference_scale": 0.050273582339286804
+    },
+    {
+      "tensor": "blk.14.attn_v.weight",
+      "row": 67,
+      "column": 290,
+      "master": -0.032799750566482544,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.06559949368238449,
+      "reference_scale": 0.06559950113296509
+    },
+    {
+      "tensor": "blk.15.ffn_down.weight",
+      "row": 388,
+      "column": 2112,
+      "master": 0.024102935567498207,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.048205867409706116,
+      "reference_scale": 0.04820587486028671
+    },
+    {
+      "tensor": "blk.16.ffn_down.weight",
+      "row": 610,
+      "column": 1358,
+      "master": -0.020531512796878815,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.04106302559375763,
+      "reference_scale": 0.04106302186846733
+    },
+    {
+      "tensor": "blk.17.ffn_gate.weight",
+      "row": 1648,
+      "column": 34,
+      "master": -0.02381555736064911,
+      "native_code": 0,
+      "reference_code": -1,
+      "native_scale": 0.047631122171878815,
+      "reference_scale": 0.04763111099600792
+    },
+    {
+      "tensor": "blk.17.ffn_up.weight",
+      "row": 993,
+      "column": 165,
+      "master": 0.024892469868063927,
+      "native_code": 0,
+      "reference_code": 1,
+      "native_scale": 0.04978493973612785,
+      "reference_scale": 0.049784936010837555
+    },
+    {
+      "tensor": "blk.17.ffn_up.weight",
+      "row": 1453,
+      "column": 577,
+      "master": 0.02450365014374256,
+      "native_code": 1,
+      "reference_code": 0,
+      "native_scale": 0.049007296562194824,
+      "reference_scale": 0.04900730773806572
+    },
+    {
+      "tensor": "blk.18.attn_output.weight",
+      "row": 536,
+      "column": 393,
+      "master": -0.021108947694301605,
+      "native_code": -1,
+      "reference_code": 0,
+      "native_scale": 0.04221789166331291,
+      "reference_scale": 0.04221789538860321
+    }
+  ],
+  "largest_scale_errors": [
+    {
+      "tensor": "blk.23.ffn_up.weight",
+      "scale_abs_error": 8.940696716308594e-08,
+      "code_mismatches": 0
+    },
+    {
+      "tensor": "blk.1.attn_output.weight",
+      "scale_abs_error": 7.450580596923828e-08,
+      "code_mismatches": 0
+    },
+    {
+      "tensor": "blk.23.ffn_down.weight",
+      "scale_abs_error": 5.960464477539063e-08,
+      "code_mismatches": 1
+    },
+    {
+      "tensor": "blk.23.attn_output.weight",
+      "scale_abs_error": 5.960464477539063e-08,
+      "code_mismatches": 0
+    },
+    {
+      "tensor": "blk.9.ffn_down.weight",
+      "scale_abs_error": 4.470348358154297e-08,
+      "code_mismatches": 0
+    }
+  ],
+  "status": "passed"
+}

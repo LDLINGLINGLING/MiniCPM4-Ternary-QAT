@@ -1,0 +1,43 @@
+{
+  "hf_dir": "/chubao/tj-train-ssd-21/liudan190/QAT_minicpm/exports/mix_v3_bitcpm_pg32_fp32_master",
+  "native_logits": "/tmp/mix_v3_g32_logits.bin",
+  "granularity": "g32",
+  "device": "cuda:1",
+  "autocast": "bf16",
+  "sequence_length": 32,
+  "decode_steps": 8,
+  "vocab_size": 73448,
+  "overall": {
+    "positions": 40,
+    "max_abs_error": 1.6812725067138672,
+    "mean_abs_error": 0.08766565471887589,
+    "rmse": 0.1245212417436138,
+    "argmax_agreement": 0.975,
+    "native_cross_entropy": 4.564454078674316,
+    "hf_cross_entropy": 4.531025409698486,
+    "native_target_accuracy": 0.25,
+    "hf_target_accuracy": 0.25
+  },
+  "prefill": {
+    "positions": 32,
+    "max_abs_error": 1.6812725067138672,
+    "mean_abs_error": 0.09109814465045929,
+    "rmse": 0.13093687149233724,
+    "argmax_agreement": 1.0,
+    "native_cross_entropy": 5.043316841125488,
+    "hf_cross_entropy": 4.993780136108398,
+    "native_target_accuracy": 0.1875,
+    "hf_target_accuracy": 0.1875
+  },
+  "cached_decode": {
+    "positions": 8,
+    "max_abs_error": 0.5163264274597168,
+    "mean_abs_error": 0.07393563538789749,
+    "rmse": 0.09460359909672672,
+    "argmax_agreement": 0.875,
+    "native_cross_entropy": 2.649003028869629,
+    "hf_cross_entropy": 2.680006504058838,
+    "native_target_accuracy": 0.5,
+    "hf_target_accuracy": 0.5
+  }
+}

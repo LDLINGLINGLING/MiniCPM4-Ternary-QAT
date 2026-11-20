@@ -1,0 +1,46 @@
+{
+  "mix_v2_qat_70_15_15": {
+    "web_zh": {
+      "windows": 341537,
+      "tokens": 699467776,
+      "data_passes": 0.38033115849794935
+    },
+    "web_en": {
+      "windows": 341723,
+      "tokens": 699848704,
+      "data_passes": 0.36468269298494627
+    },
+    "math": {
+      "windows": 146515,
+      "tokens": 300062720,
+      "data_passes": 0.8577408307232971
+    },
+    "code": {
+      "windows": 147121,
+      "tokens": 301303808,
+      "data_passes": 0.8612885285250125
+    }
+  },
+  "mix_v2_bf16_70_15_15": {
+    "web_zh": {
+      "windows": 341537,
+      "tokens": 699467776,
+      "data_passes": 0.38033115849794935
+    },
+    "web_en": {
+      "windows": 341723,
+      "tokens": 699848704,
+      "data_passes": 0.36468269298494627
+    },
+    "math": {
+      "windows": 146515,
+      "tokens": 300062720,
+      "data_passes": 0.8577408307232971
+    },
+    "code": {
+      "windows": 147121,
+      "tokens": 301303808,
+      "data_passes": 0.8612885285250125
+    }
+  }
+}
